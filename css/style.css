@@ -13,10 +13,9 @@ body{
 .card-body{
     display: flex;
     min-height: 600px;
-    min-width: 1000px;
+    width: 1000px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 24px;
-
 }
 .left{
     background: rgb(49,44,234);

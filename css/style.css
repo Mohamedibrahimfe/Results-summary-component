@@ -1,0 +1,165 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica;
+}
+.card{
+    padding: 10% 30%;    
+    margin-left: -100px;
+}
+.card-body{
+    display: flex;
+    min-height: 600px;
+    min-width: 1000px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 24px;
+
+}
+.left{
+    background: rgb(49,44,234);
+    background: linear-gradient(0deg, rgba(49,44,234,1) 0%, rgba(76,55,240,1) 50%, rgba(103,67,240,1) 100%);
+    border-radius: 24px;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.left h1{
+    color: gainsboro;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.left h4{
+    margin-block: 50px;
+    font-size: 72px;
+    font-weight: bold;
+}
+.back{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(15, 15, 23, 0.121);
+}
+.left span h5{
+    margin-top: -40px;
+    color: rgba(211, 211, 211, 0.6);
+    font-size:16px
+}
+.left h2{
+    margin: 25px;
+    font-size: 28px;
+}
+.left p{
+    color: gainsboro;
+    line-height: 1.4;
+    width: 80%;
+    font-size: 20px;
+}
+.right{
+    border-radius: 24px;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    text-align: center;
+}
+.right h3{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size:26px;
+    font-weight: bold;
+    margin-left:20px;
+}
+.right .subjects{
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90%;
+}
+.sub{
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem;
+    font-weight: bold;
+    padding-left: 40px;
+    font-size: 18px;
+    position: relative;
+}
+.sub img{
+    position: absolute;
+    left: 10px;
+}
+.one{
+    background-color: #FFF6F5;
+    color: red;
+}
+.two{
+    background-color: #FFFBF2;
+    color: #fda919;
+}
+.three{
+    background-color: #F2FBFA;
+    color: #299E80;
+}
+.four{
+    background-color: #F3F3FD;
+    color: #A2AAFF;
+}
+.first{
+    color: black;
+    font-weight: bold;
+}
+.another {
+    font-weight: normal;
+    color:gray;
+}
+.right a{
+    margin: auto;
+    background-color: #303B59;
+    color: white;
+    text-decoration: none;
+    width: 280px;
+    height: 60px;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right a:hover{
+    background: rgb(51,45,224);
+    background: linear-gradient(0deg, rgba(51,45,224,1) 0%, rgba(9,9,121,1) 51%, rgba(101,65,240,1) 100%);
+}
+@media (max-width: 768px) {
+    .card-body{
+        flex-direction: column!important;
+        width: 390px;
+        margin-right:90px!important;
+        margin-left:-90px!important;
+        height:100%;
+    }
+    .left p{
+        margin-bottom: 20px;
+    }
+    .right h3{
+        margin: 10px;
+    }
+    .right a{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+.attribution{
+    margin-top: -20px;
+    text-align: center;
+    padding:15px;
+}
